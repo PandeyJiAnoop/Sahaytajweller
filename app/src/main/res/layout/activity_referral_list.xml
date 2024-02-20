@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_new"
+    android:orientation="vertical">
+
+  <!-- TODO: Update blank fragment layout -->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="@color/grey"
+      android:gravity="center"
+      android:text="Income Details"
+      android:textColor="@color/golden"
+      android:textStyle="bold"
+      android:visibility="gone" />
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="?android:attr/actionBarSize">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_500"
+        tools:ignore="NewApi">
+
+      <RelativeLayout
+          android:id="@+id/header"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="0dp"
+          android:background="@color/purple_500">
+
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:tint="@color/golden"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/menuImg"
+            android:gravity="center_vertical"
+            android:text="My Referral"
+            android:textColor="@color/golden"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+      </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+  </com.google.android.material.appbar.AppBarLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:background="@color/red"
+          android:text="My Referral Report"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+
+<!--      <include layout="@layout/dynamic_income_referral"></include>-->
+<!--      <include layout="@layout/dynamic_income_referral"></include>-->
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:id="@+id/srl_refresh"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

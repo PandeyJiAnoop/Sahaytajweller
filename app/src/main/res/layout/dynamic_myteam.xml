@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_weight="1"
+    android:elevation="5dp"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext_black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black">
+
+            <!--            <TextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                -->
+            <!--                android:text="S.No"-->
+            <!--                android:textColor="@color/golden"-->
+            <!--                android:textSize="14dp" />-->
+
+            <!--            <View-->
+            <!--                android:layout_width="2dp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:background="@color/red" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/sno"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                -->
+            <!--                android:text="N/A"-->
+            <!--                -->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:textColor="@color/golden"-->
+            <!--                android:textSize="14dp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Customer  Id"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/cust_id_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="N/A"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Cutsomer name"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/cust_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Reg. Date"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/reg_date_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Mobile No."
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/mob_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="	Email id"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/emailid_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:textColor="@color/golden"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Status"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/status_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:textColor="@color/golden"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Activation Date"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/activatioon_date_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:textColor="@color/golden"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Level"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/level_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:textColor="@color/golden"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_black"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Amount"
+                android:textColor="@color/golden"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/red" />
+            <TextView
+                android:id="@+id/amount_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="N/A"
+                android:textColor="@color/golden"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/skyblue"
+            android:layout_height="5dp">
+        </View>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

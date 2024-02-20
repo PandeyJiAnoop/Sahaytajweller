@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">SahaytaJweller</string>
+    <!--Intro slider texts -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Grocery!</string>
+    <string name="slide_1_desc">The easiest way to order Grocery from your favourite Store!
+    </string>
+
+    <string name="slide_2_title">Near By Stores</string>
+    <string name="slide_2_desc">Order online and delivered anywhere for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Online Order and get fastest Delivery everytime!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome
+        slider -> clear data
+    </string>
+
+    <string name="play_again">Play Again</string>
+
+    <string-array name="payMode">
+        <item>Select Payment Mode</item>
+        <item>Fund Wallet</item>
+    </string-array>
+
+
+    <string-array name="levelValue">
+        <item>Select Level</item>
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+        <item>Level 6</item>
+        <item>Level 7</item>
+        <item>Level 8</item>
+        <item>Level 9</item>
+        <item>Level 10</item>
+        <item>Level 11</item>
+        <item>Level 12</item>
+        <item>Level 13</item>
+        <item>Level 14</item>
+        <item>Level 15</item>
+        <item>Level 16</item>
+        <item>Level 17</item>
+        <item>Level 18</item>
+        <item>Level 19</item>
+        <item>Level 20</item>
+        <item>Level 21</item>
+        <item>Level 22</item>
+        <item>Level 23</item>
+        <item>Level 24</item>
+        <item>Level 25</item>
+    </string-array>
+
+
+</resources>

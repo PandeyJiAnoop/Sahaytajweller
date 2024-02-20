@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_new"
+    android:orientation="vertical">
+  <!-- TODO: Update blank fragment layout -->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="@color/grey"
+      android:gravity="center"
+      android:text="PERSONAL DETAILS"
+      android:textColor="@color/golden"
+      android:textStyle="bold"
+      android:visibility="gone" />
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="?android:attr/actionBarSize">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_500"
+        tools:ignore="NewApi">
+
+      <RelativeLayout
+          android:id="@+id/header"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="0dp"
+          android:background="@color/purple_500">
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:tint="@color/golden"
+            android:src="@drawable/ic_arrow_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/menuImg"
+            android:gravity="center_vertical"
+            android:text="Withdrawal "
+            android:textColor="@color/golden"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+      </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="5dp"
+          android:padding="5dp"
+          app:cardBackgroundColor="@color/black"
+
+          android:layout_margin="5dp"
+          android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:text="Wallet Balance"
+                  android:padding="10dp"
+                  android:textColor="@color/golden" />
+
+              <TextView android:visibility="gone"
+                  android:layout_margin="5dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_marginRight="5dp"
+                  android:text="Raise Add Request"
+                  android:padding="10dp"
+                  android:backgroundTint="@color/red"
+                  android:background="@drawable/bg_btn"
+                  android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/wallet_amount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:text="00.00"
+                android:textColor="@color/golden" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey"
+                android:layout_margin="10dp"
+                android:layout_height="0.1dp">
+            </View>
+
+          </LinearLayout>
+
+          <LinearLayout android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:text="Total Credit"
+                  android:padding="10dp"
+                  android:textColor="@color/golden" />
+              <TextView
+                  android:id="@+id/credit_tv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:textSize="16dp"
+                  android:text="$ 00.00"
+                  android:textColor="@color/golden" />
+              <View
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_margin="10dp"
+                  android:layout_height="0.1dp">
+              </View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:text="Total Debit"
+                  android:padding="10dp"
+                  android:textColor="@color/golden" />
+              <TextView
+                  android:id="@+id/debit_tv"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:textSize="16dp"
+                  android:text="$ 00.00"
+                  android:textColor="@color/golden" />
+              <View
+                  android:layout_width="match_parent"
+                  android:background="@color/grey"
+                  android:layout_margin="10dp"
+                  android:layout_height="0.1dp">
+              </View>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          app:cardCornerRadius="10dp"
+          app:cardElevation="5dp"
+          android:padding="5dp"
+          app:cardBackgroundColor="@color/black"
+          android:layout_margin="5dp"
+          android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:background="@color/red"
+              android:text="Withdrawl Request"
+              android:textColor="@color/white"
+              android:textSize="12sp"
+              android:textStyle="bold" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:text="Member ID"
+              android:textColor="@color/golden" />
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  android:textColorHint="@color/darkgray"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/USERID_et"
+                android:background="@drawable/rounded_edittext_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/golden"
+                android:hint="Member ID"
+                android:singleLine="true" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:text="Amount in INR"
+              android:textColor="@color/golden" />
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  android:textColorHint="@color/darkgray"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount_et"
+                android:background="@drawable/rounded_edittext_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/golden"  android:inputType="number"
+                android:maxLength="10"
+                android:hint="Enter Amount in INR"
+                android:singleLine="true" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:text="Transaction Password"
+              android:textColor="@color/golden" />
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  android:textColorHint="@color/darkgray"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp"
+              app:passwordToggleEnabled="true"
+              android:layout_marginLeft="10dp"
+              app:passwordToggleTint="@color/white"
+              android:layout_marginRight="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PASS_et"
+                android:background="@drawable/rounded_edittext_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/golden"
+                android:hint="Transaction Password"
+                android:singleLine="true" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/raise_add_tv"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="50dp"
+          android:background="@drawable/rectangle_red"
+          android:text="Send OTP"
+          android:textColor="@color/white" />
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

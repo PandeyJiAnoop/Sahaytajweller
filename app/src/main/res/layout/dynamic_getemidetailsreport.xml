@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_customerheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#eee"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sr.no"
+                android:id="@+id/tv"
+
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Profarma No"
+                android:id="@+id/tv1"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="EMI Amount"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center"                    android:text="Member ID	"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Member Name"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Registered Date"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Maturity Date"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Validity Date"
+                android:textColor="@color/black"/>
+
+            <TextView android:id="@+id/view_btn"
+                android:layout_width="50dp"
+                android:textAllCaps="true"
+                android:layout_gravity="center_vertical"
+                android:text="Pay"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient"
+                android:textSize="12dp" android:textColor="@color/white"
+                android:layout_height="30dp">
+            </TextView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"></View>
+</LinearLayout>

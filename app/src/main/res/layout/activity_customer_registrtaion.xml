@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_new"
+    android:orientation="vertical">
+  <!-- TODO: Update blank fragment layout -->
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="?android:attr/actionBarSize">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_500"
+        tools:ignore="NewApi">
+      <RelativeLayout
+          android:id="@+id/header"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="0dp"
+          android:background="@color/purple_500">
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:tint="@color/golden"
+            android:src="@drawable/ic_arrow_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/menuImg"
+            android:gravity="center_vertical"
+            android:text="Customer Registration"
+            android:textColor="@color/golden"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+      </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:background="@color/green"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:gravity="center_vertical"
+              android:text="   Create a new account"
+              android:textStyle="bold"
+              android:textSize="18dp"
+              android:textColor="@color/white" />
+          <LinearLayout
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Sponsor Id*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp"
+                android:textColor="@color/golden" />
+            <EditText
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext_black"
+                android:hint="Sponsor Id"
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:id="@+id/sponser_et"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="User Name*"
+                android:textStyle="bold" android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textColor="@color/golden" />
+
+            <EditText
+                android:id="@+id/username_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_edittext_black"
+
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:hint="User Name"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Full Name*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp"
+                android:textColor="@color/golden" />
+
+            <EditText
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext_black"
+                
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:hint="Full Name"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Email*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp"
+                android:textColor="@color/golden" />
+            <EditText
+                android:id="@+id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext_black"
+                
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Mobile*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp"
+                android:textColor="@color/golden" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext_black"
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:id="@+id/mob_et"
+                android:maxLength="10"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Country*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp"
+                android:textColor="@color/golden" />
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/country_et"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_edittext_black"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Password*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp" 
+                android:textColor="@color/golden" />
+            <EditText
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:id="@+id/pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_edittext_black"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Confirm Password*"
+                android:textStyle="bold"
+                android:padding="5dp"  android:layout_marginTop="5dp"
+                android:textColor="@color/golden" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext_black"
+                android:hint="Enter Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="@color/golden"
+                android:id="@+id/c_pass_et"
+                android:singleLine="true"
+                android:textColorHint="@color/grey" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" 
+                android:background="@drawable/rectangle_red"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Submit" android:textSize="25dp"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+          </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

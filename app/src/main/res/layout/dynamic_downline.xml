@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="7dp"
+    android:orientation="vertical"
+    android:background="#eee">
+
+    <TextView
+        android:id="@+id/tvMemberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvMemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvRegistrationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvActivationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvSponsorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Abc"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
